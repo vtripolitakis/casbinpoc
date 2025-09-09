@@ -1,5 +1,7 @@
 p, alice, data1, read
+p, alice, /demo-middleware, read
 p, bob, data2, read
+p, bob, /demo-middleware, read
 p, data2_admin, data2, read
 p, data2_admin, data2, write
 g, alice, data2_admin
