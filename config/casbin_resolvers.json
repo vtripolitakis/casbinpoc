@@ -1,0 +1,28 @@
+{
+  "resolvers": [
+    {
+      "id": "RBACTENANT",
+      "match": { "tenant": "RBAC" },
+      "enforcer": {
+        "model": "auth/models/rbac_model.conf",
+        "policy": "auth/policies/rbac_policy.csv"
+      }
+    },
+    {
+      "id": "ABACSIMPLETENANT",
+      "match": { "tenant": "ABACSIMPLE" },
+      "enforcer": {
+        "model": "auth/models/abac_model_simple.conf",
+        "policy": "auth/policies/empty_policy.csv"
+      }
+    },
+    {
+      "id": "ABACTENANT",
+      "match": { "tenant": "ABAC" },
+      "enforcer": {
+        "model": "auth/models/abac_model.conf",
+        "policy": "auth/policies/abac_policy.csv"
+      }
+    }
+  ]
+}

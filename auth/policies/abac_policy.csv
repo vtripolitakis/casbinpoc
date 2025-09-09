@@ -1,0 +1,2 @@
+p, r.sub.age > 20 || r.sub.name =="Vangelis", resource1, read
+p, r.sub.age > 30, resource1, write
